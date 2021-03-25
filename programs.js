@@ -113,7 +113,8 @@ function animEvent(event) {
   }
 }
 // Book flipping effects ends here
-
+console.log("Window Height" + $(window).innerHeight());
+console.log("Window Height" + $(document).innerHeight());
 //Scroll to fade
 $(document).scroll(function() {
   var scroll = $(document).scrollTop();
@@ -127,7 +128,8 @@ $(document).scroll(function() {
   var distance = 0;
   var scrollTop = $(this).scrollTop();
   $(".course-item").each(function(index, value) {
-    distance = $(this).offset().top - (scrollTop + 350);
+    distance = $(this).offset().top - (scrollTop + $(window).innerHeight());
+    console.log(distance);
     if (distance < 0) {
       distance = 0;
     }

@@ -18,7 +18,8 @@
 }
 .programs-wrapper div {
   width: calc(80vw / 2);
-  height: 500px;
+  max-width: 960px;
+  min-height: 500px;
   opacity: 1;
   transition: opacity 0.5s;
 }
