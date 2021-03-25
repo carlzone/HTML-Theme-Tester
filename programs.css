@@ -1,0 +1,209 @@
+.body {
+  overflow-x: hidden;
+}
+
+/*|This is the programs group|*/
+.programs-group {
+  display: flex;
+  flex-direction: row;
+  background: var(--cNeutralLight);
+  height: 500px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.programs-wrapper {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 15px var(--cNeutralMid);
+}
+.programs-wrapper div {
+  width: calc(80vw / 2);
+  height: 500px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.programs-page div.hide {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.programs-page div:hover {
+  cursor: pointer;
+}
+
+.programs-group-page {
+  box-shadow: 5px 5px 10px var(--cNeutralMid);
+}
+.programs-group-leftpage {
+  background: rgb(240, 240, 240);
+  box-shadow: inset -20px 0px 15px var(--cTransMid),
+    inset 0px 0px 15px var(--cTransMid);
+}
+.programs-group-rightpage {
+  background: rgb(240, 240, 240);
+  box-shadow: inset 20px 0px 15px var(--cTransMid),
+    inset 0px 0px 15px var(--cTransMid);
+}
+.filler {
+  display: none;
+  width: calc(80vw / 2);
+  height: 500px;
+}
+
+.btn-changer {
+  margin: 10px 0 10px 0;
+}
+.flipper {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  background: #dddddd;
+  width: calc(80vw / 2);
+  height: 500px;
+  border: solid 1 var(--cNeutralMid);
+}
+div.left {
+  display: inline-block;
+  transform-origin: 100%;
+  animation: flippageLR;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  box-shadow: inset -20px 0 20px var(--cTransMid);
+}
+div.right {
+  display: inline-block;
+  transform-origin: 100%;
+  animation: flippageRL;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  box-shadow: inset -20px 0 20px var(--cTransMid);
+}
+
+@keyframes flippageLR {
+  0% {
+    opacity: 1;
+    transform: perspective(0px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(1500px) rotateY(90deg);
+  }
+  95% {
+    opacity: 1;
+    transform: perspective(0px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(0px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+@keyframes flippageRL {
+  0% {
+    opacity: 1;
+    transform: perspective(0px) rotateY(180deg);
+  }
+  50% {
+    transform: perspective(1500px) rotateY(90deg);
+  }
+  95% {
+    opacity: 1;
+    transform: perspective(0px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(0px) rotateY(0deg);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .filler {
+    display: inline-block;
+    width: 93vw;
+  }
+  .programs-wrapper div {
+    width: 93vw;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 860px) {
+  .programs-wrapper div {
+    width: calc(96vw / 2);
+  }
+}
+
+.prog-icon {
+  width: 150px;
+  border: none;
+}
+.prog-icon .card-img-overlay label {
+  text-shadow: 2px 2px var(--cLightShadow);
+}
+.prog-icon:hover .card-img-top {
+  box-shadow: 0 0 5px var(--cDarkShadow);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.prog-icon:hover .card-img-overlay label {
+  color: var(--cLightShadow);
+  cursor: pointer;
+  text-shadow: none;
+}
+.prog-icon:hover {
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 150px;
+  opacity: 0.5;
+  padding: 5px;
+}
+/*|This is the programs group END|*/
+
+/*|This is the courses group|*/
+.course-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+.course-item {
+  --itemOpacity: 0;
+  background: var(--cSub);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--cNeutralMid);
+  opacity: var(--itemOpacity);
+  transition: opacity 3s;
+}
+
+.course-item.display {
+  opacity: 1;
+  animation: updown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes updown {
+  0% {
+    margin-top: 10px;
+  }
+  50% {
+    margin-top: 100px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+.course-content {
+  background: var(--cNeutralLight);
+  padding: 15px;
+  border-radius: 10px;
+}
+/*|This is the courses group END|*/

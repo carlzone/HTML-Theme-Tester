@@ -1,0 +1,110 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="6AE57E84-7650-4A11-BD28-95B3EB8AADA4" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="programs.css" />
+</head>
+
+<body>
+  <div class="header d-flex align-content-end align-items-end">
+    <div class="container-fluid m-0 p-1">
+      <nav class="navbar navbar-expand-md justify-content-start">
+        <a class="navbar-brand link" href="/">
+          <img class="rounded" src="" /><span><h3>English4You</h3></span>
+        </a>
+        <button
+            class="navbar-toggler navbar-dark ml-auto border border-warning"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse pr-2" id="collapsibleNavbar">
+          <ul class="navbar-nav text-right ml-auto">
+            <li class="nav-item">
+              <a class="nav-link link" href="/register.html">Register</a>
+            </li>
+            <li class="link nav-item">
+              <a class="nav-link link" href="/programs.html">Programs</a>
+            </li>
+            <li class="link nav-item">
+              <a class="nav-link link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="body d-flex flex-column justify-content-center align-items-center">
+    <div class="btn-changer">
+      <div class="btn-group">
+        <button id="btnPrev" class="btn btn-obj">Prev</button>
+        <input type="hidden" id="curpage" >
+        <button id="btnNext" class="btn btn-obj">Next</button>
+      </div>
+    </div>
+    <div class="programs-group">
+      <div class="programs-wrapper">
+        <div class="programs-page programs-group-leftpage">
+          <div class="programs-content-left d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="programs-page programs-group-rightpage">
+          <div class="programs-content-right d-flex justify-content-center align-items-center"></div>
+        </div>
+        <div class="flipper"></div>
+      </div>
+      <div class="filler"></div>
+    </div>
+    <div class="course-group">
+      <div class="course-item this-item">
+        <div class="course-content">
+          <h3>Title of the course</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Sagittis orci a scelerisque purus semper eget duis at tellus. Commodo viverra maecenas
+            accumsan lacus vel. Feugiat vivamus at augue eget arcu dictum.</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-content">
+          <h3>Title of the course</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Rutrum quisque non
+            tellus orci ac auctor.</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-content">
+          <h3>Title of the course</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Tortor dignissim convallis aenean et tortor at. Mauris commodo quis imperdiet massa
+            tincidunt nunc.</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-content">
+          <h3>Title of the course</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Proin nibh nisl condimentum id venenatis. Eu volutpat odio facilisis mauris sit amet
+            massa vitae.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+  <div class="go2top invisible"><button class="btn-obj"><i class="fas fa-angle-up"></span></button></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="programs.js"></script>
+</body>
+
+</html>
