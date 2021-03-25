@@ -51,8 +51,15 @@
 }
 
 .btn-changer {
+  display: flex;
+  justify-content: center;
+  width: 90vh;
   margin: 10px 0 10px 0;
 }
+.btn-changer .btn-group {
+  width: 100%;
+}
+
 .flipper {
   display: none;
   opacity: 0;
