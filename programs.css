@@ -88,6 +88,17 @@ div.right {
   box-shadow: inset -20px 0 20px var(--cTransMid);
 }
 
+.program-image {
+  max-width: calc((80vw / 2) - 100px);
+  max-height: calc((80vw / 2) - 80px);
+  object-position: center;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.program-image-container {
+  box-shadow: inset 5px 5px 20px var(--cNeutralLight);
+}
+
 @keyframes flippageLR {
   0% {
     opacity: 1;

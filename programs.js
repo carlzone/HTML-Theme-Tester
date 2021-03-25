@@ -1,10 +1,25 @@
 //This is the program section for the book flipping effect
 var sampleContent = [
-  ["This is the first page", "This the content for the right"],
-  ["This is the second page", "Partner of the second page"],
-  ["Another page this is", "I'm with you bro"],
-  ["So another one", "Yes, another one"],
-  ["Last page at last!", "The end"]
+  [
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=709&q=80",
+    "This the content for the right"
+  ],
+  [
+    "https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+    "Partner of the second page"
+  ],
+  [
+    "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+    "I'm with you bro"
+  ],
+  [
+    "https://images.unsplash.com/photo-1599008633840-052c7f756385?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+    "Yes, another one"
+  ],
+  [
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=709&q=80",
+    "The end"
+  ]
 ];
 var animation = document.getElementsByClassName("flipper");
 animation[0].addEventListener("animationend", animEvent, false);
@@ -14,7 +29,9 @@ $(document).ready(function() {
   var cpContent = sampleContent[0];
   $("#curpage").val(0);
   $("#btnPrev").attr("disabled", true);
-  $(".programs-content-left").html(cpContent[0]);
+  $(".programs-content-left")
+    .children("img:first-child")
+    .attr("src", cpContent[0]);
   $(".programs-content-right").html(cpContent[1]);
 
   $(document).on("click", "#btnPrev", function() {
@@ -103,9 +120,10 @@ function animEvent(event) {
       if (curpage < sampleContent.length - 1) {
         $("#btnNext").removeAttr("disabled");
       }
-      console.log($("#curpage").val());
       var cpContent = sampleContent[curpage];
-      $(".programs-content-left").html(cpContent[0]);
+      $(".programs-content-left")
+        .children("img:first-child")
+        .attr("src", cpContent[0]);
       $(".programs-content-right").html(cpContent[1]);
       $(".programs-content-left").removeClass("hide");
       $(".programs-content-right").removeClass("hide");
