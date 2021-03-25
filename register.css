@@ -17,17 +17,17 @@
   height: 260px;
   margin: 10px;
   border-radius: 130px;
-  color: var(--cText);
-  text-shadow: -1px -1px 5px var(--cLightShadow);
+  color: var(--cNeutralLight);
+  text-shadow: 1px 1px 5px var(--cNeutralMid);
   font-weight: bolder;
   font-size: 1.3em;
-  box-shadow: inset 6px 6px 40px var(--cLightShadow),
-    inset -6px -6px 40px var(--cLightShadow);
+  box-shadow: inset 6px 6px 40px var(--cNeutralLight),
+    inset -6px -6px 40px var(--cNeutralLight);
 }
 .register-choice:hover {
-  color: var(--cTextContainer);
-  box-shadow: 4px 4px 20px var(--cLink), -4px -4px 20px var(--cLink);
-  text-shadow: 1px -1px 5px var(--cDarkShadow);
+  color: var(--cNeutralMid);
+  box-shadow: 4px 4px 20px var(--cNeutralMid), -4px -4px 20px var(--cNeutralMid);
+  text-shadow: 1px -1px 5px var(--cNeutralLight);
 }
 
 .register-item {
