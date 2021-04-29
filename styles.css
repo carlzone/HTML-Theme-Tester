@@ -1,60 +1,105 @@
 /*|GLOBAL VARIABLES HERE|*/
 :root {
-  --cMain: #d2691e;
-  --cSub: #00a47c;
-  --cMin: #6876ff;
+  --color1: 63, 56, 121;
+  --color2: 0, 125, 255;
+  --color3: 131, 239, 146;
+  --color4: 255, 125, 0;
+  --color5: 228, 56, 0;
 
   --cNeutralLight: #ffffff;
   --cNeutralDark: #000000;
   --cNeutralMid: #777777;
 
   --cTransMid: rgba(100, 100, 100, 0.5);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/*|This is the class color for the background|*/
+.bg-color1 {
+  background: rgb(var(--color1));
+}
+.bg-color2 {
+  background: rgb(var(--color2));
+}
+.bg-color3 {
+  background: rgb(var(--color3));
+}
+.bg-color4 {
+  background: rgb(var(--color4));
+}
+.bg-color5 {
+  background: rgb(var(--color5));
+}
+
+/*|This is the class color for the text|*/
+.text-color1 {
+  color: rgb(var(--color1));
+}
+.text-color2 {
+  color: rgb(var(--color2));
+}
+.text-color3 {
+  color: rgb(var(--color3));
+}
+.text-color4 {
+  color: rgb(var(--color4));
+}
+.text-color5 {
+  color: rgb(var(--color5));
+}
+
+/*|This is the class for boarder colors|*/
+.border-color1 {
+  border-color: rgb(var(--color1));
+}
+.border-color2 {
+  border-color: rgb(var(--color2));
+}
+.border-color3 {
+  border-color: rgb(var(--color3));
+}
+.border-color4 {
+  border-color: rgb(var(--color4));
+}
+.border-color5 {
+  border-color: rgb(var(--color5));
+}
+
 /*|GLOBAL VARIABLES END|*/
 
 /*|CONTAINERS|*/
-body {
-  background: var(--cNeutralLight);
-  margin: 0;
-  padding: 0;
-}
-.header {
+header {
   width: 100%;
-  background: var(--cMain);
   margin: 0;
   padding: 0;
 }
-.body {
+main {
   width: 100%;
   min-height: 80vh;
   margin: 0;
   padding: 0;
 }
-.footer {
+footer {
   width: 100%;
   min-height: 10vh;
-  background: var(--cMin);
   margin: 0;
   padding: 0;
 }
 .main-container {
-  background: var(--cNeutralLight);
   min-height: 75vh;
   padding: 10px;
 }
 .text-container {
-  background: var(--cNeutralLight);
   margin: 0;
   padding: 10px;
 }
 .obj-container {
-  background: var(--cSub);
   margin: 0;
   padding: 10px;
   border-radius: 5px;
-}
-.btn-container {
-  background: var(--cMin);
 }
 /*|CONTAINERS END|*/
 
@@ -64,23 +109,19 @@ body {
   letter-spacing: 0.02em;
 }
 .text-header {
-  color: var(--cMain);
   font-weight: bolder;
   margin: 0;
   padding: 0 0 5px 0;
 }
 .text-button {
-  color: var(--cNeutralLight);
   font-weight: bold;
 }
 .text-label {
-  color: var(--cNeutralLight);
   font-weight: bold;
   margin: 0;
   padding: 0 5px 5px 5px;
 }
 p {
-  color: var(--cNeutralDark);
   margin: 0;
   padding: 0;
 }
@@ -98,31 +139,21 @@ p.size-lg {
 /*|LINK|*/
 .link {
   font-weight: bolder;
-  color: var(--cNeutralLight);
 }
 .link:hover {
-  color: var(--cNeutralDark);
   text-decoration: none;
-}
-.box-link {
-  background: var(--cMin);
-  color: var(--cNeutralDark);
 }
 /*|LINK END|*/
 
 /*|BUTTON|*/
 .btn-obj {
-  background: var(--cMin);
-  color: var(--cNeutralLight);
   font-weight: bolder;
   box-shadow: 1px 1px 4px var(--cNeutralDark);
 }
 .btn-obj:hover {
-  color: var(--cLink);
   box-shadow: 1px 1px 10px var(--cNeutralDark);
 }
 .btn-obj:active {
-  color: var(--cHighlight);
   box-shadow: 0 0 10px var(--cNeutralMid);
 }
 /*|BUTTON END|*/
