@@ -14,35 +14,51 @@
     <div class="container-fluid m-0 py-2">
       <nav class="navbar navbar-expand-md">
         <a class="navbar-brand link m-0 p-0" href="/">
-          <img class="rounded" src="" /><span><h3 class="text-color3">Website Name</h3></span>
+          <img class="rounded" src="" /><span><h3 class="m-0 p-0 text-color4">Website Name</h3></span>
         </a>
         <button
           class="navbar-toggler navbar-dark ml-auto border border-warning"
           type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse pr-2" id="collapsibleNavbar">
-          <ul class="navbar-nav text-right ml-auto">
-            <li class="nav-item">
-              <a class="nav-link link" href="/program.html">Programs</a>
-            </li>
-            <li class="link nav-item">
-              <a class="nav-link link" href="#">About</a>
-            </li>
-            <li class="link nav-item">
-              <a class="nav-link link" href="/register.html">Register</a>
-            </li>
-          </ul>
-        </div>
       </nav>
+      <div class="collapse pr-2" id="collapsibleNavbar">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item">
+            <a class="nav-link link text-color4" href="/program.html">Programs</a>
+          </li>
+          <li class="link nav-item">
+            <a class="nav-link link text-color4" href="#">About</a>
+          </li>
+          <li class="link nav-item">
+            <a class="nav-link link text-color4" href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
+  <main class="d-flex flex-column justify-content-start align-items-center">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1541791135449-168d91a780a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80" class="d-block w-100" alt="Taj Mahal">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1509110646989-7ca4308edb3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1329&q=80" class="d-block w-100" alt="From The Top">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1500785685164-2ed63ba5d58d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Walking In The Forest">
+        </div>
+      </div>
+    </div>
+  </main>
+
   <footer class="container-fluid d-flex justify-content-center align-items-center bg-dark">
-    <h6 class="text-secondary">Copyrights 2021 by Carlson</h6>
+    <h6 class="text-secondary m-0 p-3">Copyrights 2021 by Carlson</h6>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

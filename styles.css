@@ -78,13 +78,12 @@ header {
 }
 main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   margin: 0;
   padding: 0;
 }
 footer {
   width: 100%;
-  min-height: 10vh;
   margin: 0;
   padding: 0;
 }
