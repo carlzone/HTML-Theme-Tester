@@ -71,12 +71,17 @@
 /*|GLOBAL VARIABLES END|*/
 
 /*|CONTAINERS|*/
+body {
+  background-image: black;
+}
 header {
   width: 100%;
+  min-height: 10vh;
   margin: 0;
   padding: 0;
 }
 main {
+  position: relative;
   width: 100%;
   min-height: 90vh;
   margin: 0;
@@ -86,6 +91,13 @@ footer {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+#main {
+  background: radial-gradient(
+      rgba(var(--color3), 0.2),
+      rgba(var(--color4), 0.4)
+    )
+    fixed no-repeat center;
 }
 .main-container {
   min-height: 75vh;
@@ -178,8 +190,13 @@ img {
   border-radius: 25px;
 }
 
-.carousel-item img {
+#intro .carousel-item img {
   height: 60vh;
   object-fit: cover;
   object-position: center;
+}
+
+#intro {
+  height: 90vh;
+  background-color: #ffffff;
 }
